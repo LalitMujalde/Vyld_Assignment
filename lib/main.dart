@@ -35,7 +35,6 @@ class DashboardPage extends StatefulWidget {
 
 class _DashboardPageState extends State<DashboardPage> {
   final TextEditingController _searchController = TextEditingController();
-  bool _isVisible = true;
 
   List<Color> bgColors = const [
     Color(0xfffaa5a3),
@@ -45,7 +44,6 @@ class _DashboardPageState extends State<DashboardPage> {
     Color(0xffa7aa8f),
   ];
 
-  int _counter = 0;
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
