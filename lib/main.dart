@@ -274,41 +274,44 @@ class _DashboardPageState extends State<DashboardPage> {
                               ),
                             ),
                             SizedBox(width: width * 0.02),
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text('Adda Name',
-                                    style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: width * 0.04,
-                                        fontWeight: FontWeight.w600)),
-                                Row(
-                                  children: [
-                                    ClipRRect(
-                                      borderRadius: BorderRadius.circular(50),
-                                      child: Image(
-                                        image: const AssetImage(
-                                          'assets/images/avatar_3.png',
+                            Flexible(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text('Adda Name jadfalskdfjkasdfjaksdlfjaslkf',
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: width * 0.04,
+                                          fontWeight: FontWeight.w600),
+                                      overflow: TextOverflow.ellipsis),
+                                  Row(
+                                    children: [
+                                      ClipRRect(
+                                        borderRadius: BorderRadius.circular(50),
+                                        child: Image(
+                                          image: const AssetImage(
+                                            'assets/images/avatar_3.png',
+                                          ),
+                                          width: width * 0.08,
+                                          height: width * 0.08,
                                         ),
-                                        width: width * 0.08,
-                                        height: width * 0.08,
                                       ),
-                                    ),
-                                    SizedBox(width: width * 0.015),
-                                    ClipRRect(
-                                      borderRadius: BorderRadius.circular(50),
-                                      child: Image(
-                                        image: const AssetImage(
-                                          'assets/images/avatar_5.png',
+                                      SizedBox(width: width * 0.015),
+                                      ClipRRect(
+                                        borderRadius: BorderRadius.circular(50),
+                                        child: Image(
+                                          image: const AssetImage(
+                                            'assets/images/avatar_5.png',
+                                          ),
+                                          width: width * 0.08,
+                                          height: width * 0.08,
                                         ),
-                                        width: width * 0.08,
-                                        height: width * 0.08,
                                       ),
-                                    ),
-                                  ],
-                                ),
-                              ],
+                                    ],
+                                  ),
+                                ],
+                              ),
                             ),
                             SizedBox(
                               height: height * 0.07,
